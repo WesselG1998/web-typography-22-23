@@ -17,11 +17,46 @@ Feel free to adjust the defaults to your needs.
 	transition: .2s;
 	opacity: 0;
 }
+
+
+
 .voice1 {
-	font-style: italic;
+	font-family: "Brenner Mono";
+font-style: Normal;
+font-weight: 400;
+	color: red;
+	font-size: 20px;
+	background-color: black;
+	padding: .3em;
 }
 .voice2 {
-	font-weight: bold;
+	font-family: "Brenner Sans Condensed";
+	font-style: Normal;
+	font-weight: 200;
+	color: lime;
+	font-size: 35px;
+	background-color: black;
+	padding: .3em;
+}
+
+.voice3 {
+	font-family: "Brenner Slab";
+	font-style: Italic;
+	font-weight: 800;
+	color: white;
+	font-size: 20px;
+	background-color: black;
+	padding: .3em;
+}
+
+.voice4 {
+	font-family: "Brenner Sans Condensed";
+font-style: Normal;
+font-weight: 800;
+	color: lime;
+	font-size: 35px;
+	background-color: black;
+	padding: .3em;
 }
 
 /* **********************************************
@@ -34,74 +69,126 @@ You probably want to change the styling.
 ********************************************** */
 .p0 span {
 	opacity: 0;
-	font-family: brenner;
+	font-family: "Brenner Mono";
 }
 .p0.on span:first-of-type {
 	opacity: 1;
 	transition: 0s;
-	font-weight: 200;
+	font-weight: 400;
+	font-style: Normal;
+	color: red;
+	font-size: 20px;
+	background-color: black;
+	
 }
 .p0.on span:nth-of-type(2) {
 	opacity: 1;
 	transition: 0s .4s;
 	margin-right: -.25em;
 	font-weight: 400;
+	font-style: Normal;
+	color: red;
+	font-size: 20px;
+	background-color: black;
 }
 .p0.on span:nth-of-type(3) {
 	opacity: 1;
 	transition: 0s .5s;
 	margin-right: -.25em;
-	font-weight: 600;
+	font-weight: 400;
+	font-style: Normal;
+	color: red;
+	font-size: 20px;
+	background-color: black;
 }
 .p0.on span:nth-of-type(4) {
 	opacity: 1;
 	transition: 0s .7s;
 	margin-right: -.25em;
-	font-weight: 800;
+	font-weight: 400;
+	font-style: Normal;
+	color: red;
+	font-size: 20px;
+	background-color: black;
 }
 .p0.on span:nth-of-type(5) {
 	opacity: 1;
 	transition: 0s 1.1s;
 	margin-right: -.25em;
-	font-family: "brenner sans";
+	font-family: "Brenner Mono";
 }
 .p0.on span:nth-of-type(6) {
 	opacity: 1;
 	transition: 0s 1.4s;
 	margin-right: -.25em;
-	font-family: "brenner display";
+	font-family: "Brenner Mono";
+	font-weight: 400;
+	font-style: Normal;
+	color: red;
+	font-size: 20px;
+	background-color: black;
 }
 .p0.on span:nth-of-type(7) {
 	opacity: 1;
 	transition: 0s 1.7s;
 	margin-right: -.25em;
-	font-family: "brenner script";
+	font-family: "Brenner Mono";
+	font-weight: 400;
+	font-style: Normal;
+	color: red;
+	font-size: 20px;
+	background-color: black;
 }
 .p0.on span:nth-of-type(8) {
 	opacity: 1;
 	transition: 0s 2s;
-	font-family: "brenner script";
+	font-family: "Brenner Mono";
+	font-weight: 400;
+	font-style: Normal;
+	color: red;
+	font-size: 20px;
+	background-color: black;
 }
 .p0.on span:nth-of-type(9) {
 	opacity: 1;
 	transition: 0s 3s;
-	font-family: "brenner Sans condensed";
+	font-family: "Brenner Mono";
+	font-weight: 400;
+	font-style: Normal;
+	color: red;
+	font-size: 20px;
+	background-color: black;
 }
 .p0.on span:nth-of-type(10) {
 	opacity: 1;
 	transition: 0s 3.2s;
-	font-family: "brenner mono";
+	font-family: "Brenner Mono";
+	font-weight: 400;
+	font-style: Normal;
+	color: red;
+	font-size: 20px;
+	background-color: black;
 }
 .p0.on span:nth-of-type(11) {
 	opacity: 1;
 	transition: 0s 3.7s;
-	font-family: "brenner slab";
+	font-family: "Brenner Mono";
+	font-weight: 400;
+	font-style: Normal;
+	color: red;
+	font-size: 20px;
+	background-color: black;
 }
 
 .p1.on {
-	background: hotpink;
-	color: red;
-	font-size: 200px;
+	opacity: 1;
+	transition: 0s 3.7s;
+	font-family: "Brenner Sans Condensed";
+	font-style: Normal;
+	font-weight: 200;
+	color: lime;
+	font-size: 35px;
+	background-color: black;
 }
 
 /* **********************************************
@@ -112,15 +199,862 @@ Sounds.
 *********************************************  */
 
 /* The moment the class .sound1 is added to the body, the background is yellow */
-.sound1 {
+.sound0 { background-color: black;
+}
+.sound0 #video-mask { animation: shake 2s;
+}
+
+.sound1 { 
+}
+.sound1 #video-mask { animation: alarm 2s;} 
+	@keyframes alarm{
+		0% {box-shadow: 0px 0px 200px 50px red;}
+		25%{box-shadow: 0px 0px 100px 50px red;}
+		50%{box-shadow: 0px 0px 100px 50px blue;}
+		75%{box-shadow: 0px 0px 200px 50px blue;}
+		100%{box-shadow: none;}
+
+	}
 	
 }
+
+.sound2 {
+}
+.sound2 #video-mask { animation: loeien 1s;} 
+@keyframes loeien{
+	0% {box-shadow: 0px 0px 100px 10px white;}
+	75%{box-shadow: 0px 0px 200px 80px white;}
+	100%{box-shadow: none;}
+}
+
+.sound3 { animation: snerpend 1s;
+}
+@keyframes snerpend {
+	0% {background-color: white;}
+	10% {background-color: black;}
+	20% {background-color: white;}
+	30% {background-color:black;}
+	40% {background-color: white;}
+	50% {background-color:black;}
+	60% {background-color: white;}
+	70% {background-color:black;}
+	80% {background-color: white;}
+	90% {background-color: black;}
+	100% {background-color:white;}
+}
+.sound3 #video-mask {
+}
+
+
+
+.sound4 { animation: geluid1 1s;
+	
+}
+ @keyframes geluid1 {
+	 0% {background-color: none;}
+	 25% {background-color: white;}
+	 75% {background-color:whitesmoke;}
+	 100% {background-color: none;}
+	 
+ }
+
+.sound4 #video-mask { 
+}
+
+.sound5 { animation: snerpend 1s;
+}
+.sound5 #video-mask { 
+}
+
+.sound6 { animation: geluid1 1s;
+}
+.sound6 #video-mask { 
+}
+
+.sound7 { animation: hard 1s;
+}
+
+.sound7 #video-mask { 
+}
+
+.sound8 { animation: geluid1 1s;
+}
+.sound8 #video-mask { 
+}
+
+.sound9 { animation: piep2 25s;
+
+}
+
+
+.sound9 #video-mask { 
+	animation: piep_2 25s;
+}
+
+.sound10 { animation: piep3 12s
+}
+.sound10 #video-mask { animation: piep_3 12s;
+
+}
+
+.sound11 { animation: piep4 4s
+}
+.sound11 #video-mask { animation: piep_4 4s;
+
+}
+
+.sound12 { background-color: white;
+}
+.sound12 #video-mask { 
+}
+
+
 
 /* The moment the class .sound1 is added to the body, the movie makes a turn */
-.sound1 #video-mask {
+
+  
+  @keyframes shake {
+	0% { transform: translate(1px, 1px) rotate(0deg); }
+	2.5% { transform: translate(-1px, -2px) rotate(-1deg); }
+	5% { transform: translate(-3px, 0px) rotate(1deg); }
+	7.5% { transform: translate(3px, 2px) rotate(0deg); }
+	10% { transform: translate(1px, -1px) rotate(1deg); }
+	12.5% { transform: translate(-1px, 2px) rotate(-1deg); }
+	15% { transform: translate(-3px, 1px) rotate(0deg); }
+	17.5% { transform: translate(3px, 1px) rotate(-1deg); }
+	20% { transform: translate(-1px, -1px) rotate(1deg); }
+	22.5% { transform: translate(1px, 2px) rotate(0deg); }
+	25% { transform: translate(1px, -2px) rotate(-1deg); }
+	27.5% { transform: translate(1px, 1px) rotate(0deg); }
+	30% { transform: translate(-1px, -2px) rotate(-1deg); }
+	32.5% { transform: translate(-3px, 0px) rotate(1deg); }
+	35% { transform: translate(3px, 2px) rotate(0deg); }
+	37.5% { transform: translate(1px, -1px) rotate(1deg); }
+	40% { transform: translate(-1px, 2px) rotate(-1deg); }
+	42.5% { transform: translate(-3px, 1px) rotate(0deg); }
+	45% { transform: translate(3px, 1px) rotate(-1deg); }
+	47.5% { transform: translate(-1px, -1px) rotate(1deg); }
+	50% { transform: translate(1px, 2px) rotate(0deg); }
+	52.5% { transform: translate(1px, -2px) rotate(-1deg); }
+	55% { transform: translate(1px, 1px) rotate(0deg); }
+	57.5% { transform: translate(-1px, -2px) rotate(-1deg); }
+	60% { transform: translate(-3px, 0px) rotate(1deg); }
+	62.5% { transform: translate(3px, 2px) rotate(0deg); }
+	65% { transform: translate(1px, -1px) rotate(1deg); }
+	67.5% { transform: translate(-1px, 2px) rotate(-1deg); }
+	70% { transform: translate(-3px, 1px) rotate(0deg); }
+	72.5% { transform: translate(3px, 1px) rotate(-1deg); }
+	75% { transform: translate(-1px, -1px) rotate(1deg); }
+	77.5% { transform: translate(1px, 2px) rotate(0deg); }
+	80% { transform: translate(1px, -2px) rotate(-1deg); }
+	82.5% { transform: translate(1px, 1px) rotate(0deg); }
+	85% { transform: translate(-1px, -2px) rotate(-1deg); }
+	87.5% { transform: translate(-3px, 0px) rotate(1deg); }
+	90% { transform: translate(3px, 2px) rotate(0deg); }
+	92.5% { transform: translate(1px, -1px) rotate(1deg); }
+	95% { transform: translate(-1px, 2px) rotate(-1deg); }
+	97.5% { transform: translate(-3px, 1px) rotate(0deg); }
+	100% { transform: translate(3px, 1px) rotate(-1deg); }
+	
+  
 	
 }
 
+@keyframes snerpend {
+	0% {background-color: white;}
+	10% {background-color: black;}
+	20% {background-color: white;}
+	30% {background-color:black;}
+	40% {background-color: white;}
+	50% {background-color:black;}
+	60% {background-color: white;}
+	70% {background-color:black;}
+	80% {background-color: white;}
+	90% {background-color: black;}
+	100% {background-color:white;}
+}
+
+@keyframes hard {
+	0% {background-color: white;}
+	2.5% {background-color: black;}
+	5% {background-color: white;}
+	7.5% {background-color: black;}
+	10% {background-color: white;}
+	12.5% {background-color: black;}
+	15% {background-color: white;}
+	17.5% {background-color: black;}
+	20% {background-color: white;}
+	22.5% {background-color: black;}
+	25% {background-color: white;}
+	27.5% {background-color: black;}
+	30% {background-color: white;}
+	32.5% {background-color: black;}
+	35% {background-color: white;}
+	37.5% {background-color: black;}
+	40% {background-color: white;}
+	42.5% {background-color: black;}
+	45% {background-color: white;}
+	47.5% {background-color: black;}
+	50% {background-color: white;}
+	52.5% {background-color: black;}
+	55% {background-color: white;}
+	57.5% {background-color: black;}
+	60% {background-color: white;}
+	62.5% {background-color: black;}
+	65% {background-color: white;}
+	67.5% {background-color: black;}
+	70% {background-color: white;}
+	72.5% {background-color: black;}
+	75% {background-color: white;}
+	77.5% {background-color: black;}
+	80% {background-color: white;}
+	82.5% {background-color: black;}
+	85% {background-color: white;}
+	87.5% {background-color: black;}
+	90% {background-color: white;}
+	92.5% {background-color: black;}
+	95% {background-color: white;}
+	97.5% {background-color: black;}
+	100% {background-color: white;}
+}
+
+@keyframes piep {
+	0% {transform: translate(none);}
+	100%{transform: translate(0, -234.5px);}
+}
+
+@keyframes piep_2{
+	0% {box-shadow: 0px 0px 100px 50px #ff0000;}
+	1% {box-shadow: 0px 0px 200px 50px #ff00e7;}
+	2% {box-shadow: 0px 0px 100px 50px #00ecff;}
+	3% {box-shadow: 0px 0px 200px 50px #2200ff;}
+	4% {box-shadow: 0px 0px 100px 50px #a3ff00;}
+	5% {box-shadow: none;}
+	6% {box-shadow: none;}
+	7% {box-shadow: none;}
+	8% {box-shadow: none;}
+	9% {box-shadow: none;}
+	10% {box-shadow: 0px 0px 100px 50px #ff0000;}
+	11% {box-shadow: 0px 0px 200px 50px #ff00e7;}
+	12% {box-shadow: 0px 0px 100px 50px #00ecff;}
+	13% {box-shadow: 0px 0px 200px 50px #2200ff;}
+	14% {box-shadow: 0px 0px 100px 50px #a3ff00;}
+	15% {box-shadow: none;}
+	16% {box-shadow: none;}
+	17% {box-shadow: none;}
+	18% {box-shadow: none;}
+	19% {box-shadow: none;}
+	20% {box-shadow: 0px 0px 100px 50px #ff0000;}
+	21% {box-shadow: 0px 0px 200px 50px #ff00e7;}
+	22% {box-shadow: 0px 0px 100px 50px #00ecff;}
+	23% {box-shadow: 0px 0px 200px 50px #2200ff;}
+	24% {box-shadow: 0px 0px 100px 50px #a3ff00;}
+	25% {box-shadow: none;}
+	26% {box-shadow: none;}
+	27% {box-shadow: none;}
+	28% {box-shadow: none;}
+	29% {box-shadow: none;}
+	30% {box-shadow: 0px 0px 100px 50px #ff0000;}
+	31% {box-shadow: 0px 0px 200px 50px #ff00e7;}
+	32% {box-shadow: 0px 0px 100px 50px #00ecff;}
+	33% {box-shadow: 0px 0px 200px 50px #2200ff;}
+	34% {box-shadow: 0px 0px 100px 50px #a3ff00;}
+	35% {box-shadow: none;}
+	36% {box-shadow: none;}
+	37% {box-shadow: none;}
+	38% {box-shadow: none;}
+	39% {box-shadow: none;}
+	40% {box-shadow: 0px 0px 100px 50px #ff0000;}
+	41% {box-shadow: 0px 0px 200px 50px #ff00e7;}
+	42% {box-shadow: 0px 0px 100px 50px #00ecff;}
+	43% {box-shadow: 0px 0px 200px 50px #2200ff;}
+	44% {box-shadow: 0px 0px 100px 50px #a3ff00;}
+	45% {box-shadow: none;}
+	46% {box-shadow: none;}
+	47% {box-shadow: none;}
+	48% {box-shadow: none;}
+	49% {box-shadow: none;}
+	50% {box-shadow: 0px 0px 100px 50px #ff0000;}
+	51% {box-shadow: 0px 0px 200px 50px #ff00e7;}
+	52% {box-shadow: 0px 0px 100px 50px #00ecff;}
+	53% {box-shadow: 0px 0px 200px 50px #2200ff;}
+	54% {box-shadow: 0px 0px 100px 50px #a3ff00;}
+	55% {box-shadow: none;}
+	56% {box-shadow: none;}
+	57% {box-shadow: none;}
+	58% {box-shadow: none;}
+	59% {box-shadow: none;}
+	60% {box-shadow: 0px 0px 100px 50px #ff0000;}
+	61% {box-shadow: 0px 0px 200px 50px #ff00e7;}
+	62% {box-shadow: 0px 0px 100px 50px #00ecff;}
+	63% {box-shadow: 0px 0px 200px 50px #2200ff;}
+	64% {box-shadow: 0px 0px 100px 50px #a3ff00;}
+	65% {box-shadow: none;}
+	66% {box-shadow: none;}
+	67% {box-shadow: none;}
+	68% {box-shadow: none;}
+	69% {box-shadow: none;}
+	70% {box-shadow: 0px 0px 100px 50px #ff0000;}
+	71% {box-shadow: 0px 0px 200px 50px #ff00e7;}
+	72% {box-shadow: 0px 0px 100px 50px #00ecff;}
+	73% {box-shadow: 0px 0px 200px 50px #2200ff;}
+	74% {box-shadow: 0px 0px 100px 50px #a3ff00;}
+	75% {box-shadow: none;}
+	76% {box-shadow: none;}
+	77% {box-shadow: none;}
+	78% {box-shadow: none;}
+	79% {box-shadow: none;}
+	80% {box-shadow: 0px 0px 100px 50px #ff0000;}
+	81% {box-shadow: 0px 0px 200px 50px #ff00e7;}
+	82% {box-shadow: 0px 0px 100px 50px #00ecff;}
+	83% {box-shadow: 0px 0px 200px 50px #2200ff;}
+	84% {box-shadow: 0px 0px 100px 50px #a3ff00;}
+	85% {box-shadow: none;}
+	86% {box-shadow: none;}
+	87% {box-shadow: none;}
+	88% {box-shadow: none;}
+	89% {box-shadow: none;}
+	90% {box-shadow: 0px 0px 100px 50px #ff0000;}
+	91% {box-shadow: 0px 0px 200px 50px #ff00e7;}
+	92% {box-shadow: 0px 0px 100px 50px #00ecff;}
+	93% {box-shadow: 0px 0px 200px 50px #2200ff;}
+	94% {box-shadow: 0px 0px 100px 50px #a3ff00;}
+	95% {box-shadow: 0px 0px 100px 50px #ff0000;}
+	96% {box-shadow: 0px 0px 200px 50px #ff00e7;}
+	97% {box-shadow: 0px 0px 100px 50px #00ecff;}
+	98% {box-shadow: 0px 0px 100px 50px #2200ff;}
+	99% {box-shadow: 0px 0px 200px 50px #a3ff00;}
+	100% {box-shadow: 0px 0px 100px 50px #ff0000}
+
+}
+@keyframes piep_3{
+	0% {box-shadow: 0px 0px 100px 50px #ff0000;}
+	1% {box-shadow: 0px 0px 200px 50px #ff00e7;}
+	2% {box-shadow: 0px 0px 100px 50px #00ecff;}
+	3% {box-shadow: 0px 0px 200px 50px #2200ff;}
+	4% {box-shadow: 0px 0px 100px 50px #a3ff00;}
+	5% {box-shadow: none;}
+	6% {box-shadow: none;}
+	7% {box-shadow: none;}
+	8% {box-shadow: none;}
+	9% {box-shadow: none;}
+	10% {box-shadow: 0px 0px 100px 50px #ff0000;}
+	11% {box-shadow: 0px 0px 200px 50px #ff00e7;}
+	12% {box-shadow: 0px 0px 100px 50px #00ecff;}
+	13% {box-shadow: 0px 0px 200px 50px #2200ff;}
+	14% {box-shadow: 0px 0px 100px 50px #a3ff00;}
+	15% {box-shadow: none;}
+	16% {box-shadow: none;}
+	17% {box-shadow: none;}
+	18% {box-shadow: none;}
+	19% {box-shadow: none;}
+	20% {box-shadow: 0px 0px 100px 50px #ff0000;}
+	21% {box-shadow: 0px 0px 200px 50px #ff00e7;}
+	22% {box-shadow: 0px 0px 100px 50px #00ecff;}
+	23% {box-shadow: 0px 0px 200px 50px #2200ff;}
+	24% {box-shadow: 0px 0px 100px 50px #a3ff00;}
+	25% {box-shadow: none;}
+	26% {box-shadow: none;}
+	27% {box-shadow: none;}
+	28% {box-shadow: none;}
+	29% {box-shadow: none;}
+	30% {box-shadow: 0px 0px 100px 50px #ff0000;}
+	31% {box-shadow: 0px 0px 200px 50px #ff00e7;}
+	32% {box-shadow: 0px 0px 100px 50px #00ecff;}
+	33% {box-shadow: 0px 0px 200px 50px #2200ff;}
+	34% {box-shadow: 0px 0px 100px 50px #a3ff00;}
+	35% {box-shadow: none;}
+	36% {box-shadow: none;}
+	37% {box-shadow: none;}
+	38% {box-shadow: none;}
+	39% {box-shadow: none;}
+	40% {box-shadow: 0px 0px 100px 50px #ff0000;}
+	41% {box-shadow: 0px 0px 200px 50px #ff00e7;}
+	42% {box-shadow: 0px 0px 100px 50px #00ecff;}
+	43% {box-shadow: 0px 0px 200px 50px #2200ff;}
+	44% {box-shadow: 0px 0px 100px 50px #a3ff00;}
+	45% {box-shadow: none;}
+	46% {box-shadow: none;}
+	47% {box-shadow: none;}
+	48% {box-shadow: none;}
+	49% {box-shadow: none;}
+	50% {box-shadow: 0px 0px 100px 50px #ff0000;}
+	51% {box-shadow: 0px 0px 200px 50px #ff00e7;}
+	52% {box-shadow: 0px 0px 100px 50px #00ecff;}
+	53% {box-shadow: 0px 0px 200px 50px #2200ff;}
+	54% {box-shadow: 0px 0px 100px 50px #a3ff00;}
+	55% {box-shadow: none;}
+	56% {box-shadow: none;}
+	57% {box-shadow: none;}
+	58% {box-shadow: none;}
+	59% {box-shadow: none;}
+	60% {box-shadow: 0px 0px 100px 50px #ff0000;}
+	61% {box-shadow: 0px 0px 200px 50px #ff00e7;}
+	62% {box-shadow: 0px 0px 100px 50px #00ecff;}
+	63% {box-shadow: 0px 0px 200px 50px #2200ff;}
+	64% {box-shadow: 0px 0px 100px 50px #a3ff00;}
+	65% {box-shadow: none;}
+	66% {box-shadow: none;}
+	67% {box-shadow: none;}
+	68% {box-shadow: none;}
+	69% {box-shadow: none;}
+	70% {box-shadow: 0px 0px 100px 50px #ff0000;}
+	71% {box-shadow: 0px 0px 200px 50px #ff00e7;}
+	72% {box-shadow: 0px 0px 100px 50px #00ecff;}
+	73% {box-shadow: 0px 0px 200px 50px #2200ff;}
+	74% {box-shadow: 0px 0px 100px 50px #a3ff00;}
+	75% {box-shadow: none;}
+	76% {box-shadow: none;}
+	77% {box-shadow: none;}
+	78% {box-shadow: none;}
+	79% {box-shadow: none;}
+	80% {box-shadow: 0px 0px 100px 50px #ff0000;}
+	81% {box-shadow: 0px 0px 200px 50px #ff00e7;}
+	82% {box-shadow: 0px 0px 100px 50px #00ecff;}
+	83% {box-shadow: 0px 0px 200px 50px #2200ff;}
+	84% {box-shadow: 0px 0px 100px 50px #a3ff00;}
+	85% {box-shadow: none;}
+	86% {box-shadow: none;}
+	87% {box-shadow: none;}
+	88% {box-shadow: none;}
+	89% {box-shadow: none;}
+	90% {box-shadow: 0px 0px 100px 50px #ff0000;}
+	91% {box-shadow: 0px 0px 200px 50px #ff00e7;}
+	92% {box-shadow: 0px 0px 100px 50px #00ecff;}
+	93% {box-shadow: 0px 0px 200px 50px #2200ff;}
+	94% {box-shadow: 0px 0px 100px 50px #a3ff00;}
+	95% {box-shadow: 0px 0px 100px 50px #ff0000;}
+	96% {box-shadow: 0px 0px 200px 50px #ff00e7;}
+	97% {box-shadow: 0px 0px 100px 50px #00ecff;}
+	98% {box-shadow: 0px 0px 100px 50px #2200ff;}
+	99% {box-shadow: 0px 0px 200px 50px #a3ff00;}
+	100% {box-shadow: 0px 0px 100px 50px #ff0000}
+
+}
+
+
+@keyframes piep_4{
+	0% {box-shadow: 0px 0px 100px 50px #ff0000;}
+	1% {box-shadow: 0px 0px 200px 50px #ff00e7;}
+	2% {box-shadow: 0px 0px 100px 50px #00ecff;}
+	3% {box-shadow: 0px 0px 200px 50px #2200ff;}
+	4% {box-shadow: 0px 0px 100px 50px #a3ff00;}
+	5% {box-shadow: none;}
+	6% {box-shadow: none;}
+	7% {box-shadow: none;}
+	8% {box-shadow: none;}
+	9% {box-shadow: none;}
+	10% {box-shadow: 0px 0px 100px 50px #ff0000;}
+	11% {box-shadow: 0px 0px 200px 50px #ff00e7;}
+	12% {box-shadow: 0px 0px 100px 50px #00ecff;}
+	13% {box-shadow: 0px 0px 200px 50px #2200ff;}
+	14% {box-shadow: 0px 0px 100px 50px #a3ff00;}
+	15% {box-shadow: none;}
+	16% {box-shadow: none;}
+	17% {box-shadow: none;}
+	18% {box-shadow: none;}
+	19% {box-shadow: none;}
+	20% {box-shadow: 0px 0px 100px 50px #ff0000;}
+	21% {box-shadow: 0px 0px 200px 50px #ff00e7;}
+	22% {box-shadow: 0px 0px 100px 50px #00ecff;}
+	23% {box-shadow: 0px 0px 200px 50px #2200ff;}
+	24% {box-shadow: 0px 0px 100px 50px #a3ff00;}
+	25% {box-shadow: none;}
+	26% {box-shadow: none;}
+	27% {box-shadow: none;}
+	28% {box-shadow: none;}
+	29% {box-shadow: none;}
+	30% {box-shadow: 0px 0px 100px 50px #ff0000;}
+	31% {box-shadow: 0px 0px 200px 50px #ff00e7;}
+	32% {box-shadow: 0px 0px 100px 50px #00ecff;}
+	33% {box-shadow: 0px 0px 200px 50px #2200ff;}
+	34% {box-shadow: 0px 0px 100px 50px #a3ff00;}
+	35% {box-shadow: none;}
+	36% {box-shadow: none;}
+	37% {box-shadow: none;}
+	38% {box-shadow: none;}
+	39% {box-shadow: none;}
+	40% {box-shadow: 0px 0px 100px 50px #ff0000;}
+	41% {box-shadow: 0px 0px 200px 50px #ff00e7;}
+	42% {box-shadow: 0px 0px 100px 50px #00ecff;}
+	43% {box-shadow: 0px 0px 200px 50px #2200ff;}
+	44% {box-shadow: 0px 0px 100px 50px #a3ff00;}
+	45% {box-shadow: none;}
+	46% {box-shadow: none;}
+	47% {box-shadow: none;}
+	48% {box-shadow: none;}
+	49% {box-shadow: none;}
+	50% {box-shadow: 0px 0px 100px 50px #ff0000;}
+	51% {box-shadow: 0px 0px 200px 50px #ff00e7;}
+	52% {box-shadow: 0px 0px 100px 50px #00ecff;}
+	53% {box-shadow: 0px 0px 200px 50px #2200ff;}
+	54% {box-shadow: 0px 0px 100px 50px #a3ff00;}
+	55% {box-shadow: none;}
+	56% {box-shadow: none;}
+	57% {box-shadow: none;}
+	58% {box-shadow: none;}
+	59% {box-shadow: none;}
+	60% {box-shadow: 0px 0px 100px 50px #ff0000;}
+	61% {box-shadow: 0px 0px 200px 50px #ff00e7;}
+	62% {box-shadow: 0px 0px 100px 50px #00ecff;}
+	63% {box-shadow: 0px 0px 200px 50px #2200ff;}
+	64% {box-shadow: 0px 0px 100px 50px #a3ff00;}
+	65% {box-shadow: none;}
+	66% {box-shadow: none;}
+	67% {box-shadow: none;}
+	68% {box-shadow: none;}
+	69% {box-shadow: none;}
+	70% {box-shadow: 0px 0px 100px 50px #ff0000;}
+	71% {box-shadow: 0px 0px 200px 50px #ff00e7;}
+	72% {box-shadow: 0px 0px 100px 50px #00ecff;}
+	73% {box-shadow: 0px 0px 200px 50px #2200ff;}
+	74% {box-shadow: 0px 0px 100px 50px #a3ff00;}
+	75% {box-shadow: none;}
+	76% {box-shadow: none;}
+	77% {box-shadow: none;}
+	78% {box-shadow: none;}
+	79% {box-shadow: none;}
+	80% {box-shadow: 0px 0px 100px 50px #ff0000;}
+	81% {box-shadow: 0px 0px 200px 50px #ff00e7;}
+	82% {box-shadow: 0px 0px 100px 50px #00ecff;}
+	83% {box-shadow: 0px 0px 200px 50px #2200ff;}
+	84% {box-shadow: 0px 0px 100px 50px #a3ff00;}
+	85% {box-shadow: none;}
+	86% {box-shadow: none;}
+	87% {box-shadow: none;}
+	88% {box-shadow: none;}
+	89% {box-shadow: none;}
+	90% {box-shadow: 0px 0px 100px 50px #ff0000;}
+	91% {box-shadow: 0px 0px 200px 50px #ff00e7;}
+	92% {box-shadow: 0px 0px 100px 50px #00ecff;}
+	93% {box-shadow: 0px 0px 200px 50px #2200ff;}
+	94% {box-shadow: 0px 0px 100px 50px #a3ff00;}
+	95% {box-shadow: 0px 0px 100px 50px #ff0000;}
+	96% {box-shadow: 0px 0px 200px 50px #ff00e7;}
+	97% {box-shadow: 0px 0px 100px 50px #00ecff;}
+	98% {box-shadow: 0px 0px 100px 50px #2200ff;}
+	99% {box-shadow: 0px 0px 200px 50px #a3ff00;}
+	100% {box-shadow: 0px 0px 100px 50px #ff0000}
+
+}
+
+
+
+@keyframes piep2 {
+	0% {background-color: white;}
+	1% {background-color: black;}
+	2% {background-color: white;}
+	3% {background-color: black;}
+	4% {background-color: white;}
+	5% {background-color:black;}
+	6% {background-color: white;}
+	7% {background-color: black;}
+	8% {background-color: white;}
+	9% {background-color: black;}
+	10% {background-color:white;}
+	11% {background-color: black;}
+	12% {background-color: white;}
+	13% {background-color: black;}
+	14% {background-color: white;}
+	15% {background-color: black;}
+	16% {background-color: white;}
+	17% {background-color: black;}
+	18% {background-color: white;}
+	19% {background-color: black;}
+	20% {background-color:white;}
+	21% {background-color: black;}
+	22% {background-color: white;}
+	23% {background-color: black;}
+	24% {background-color: white;}
+	25% {background-color: black;}
+	26% {background-color: white;}
+	27% {background-color: black;}
+	28% {background-color: white;}
+	29% {background-color: black;}
+	30% {background-color:white;}
+	31% {background-color: black;}
+	32% {background-color: white;}
+	33% {background-color: black;}
+	34% {background-color: white;}
+	35% {background-color:black;}
+	36% {background-color: white;}
+	37% {background-color: black;}
+	38% {background-color: white;}
+	39% {background-color: black;}
+	40% {background-color:white;}
+	41% {background-color: black;}
+	42% {background-color: white;}
+	43% {background-color: black;}
+	44% {background-color: white;}
+	45% {background-color:black;}
+	46% {background-color: white;}
+	47% {background-color: black;}
+	48% {background-color: white;}
+	49% {background-color: black;}
+	50% {background-color:white;}
+	51% {background-color: black;}
+	52% {background-color: white;}
+	53% {background-color: black;}
+	54% {background-color: white;}
+	55% {background-color:black;}
+	56% {background-color: white;}
+	57% {background-color: black;}
+	58% {background-color: white;}
+	59% {background-color: black;}
+	60% {background-color:white;}
+	61% {background-color: black;}
+	62% {background-color: white;}
+	63% {background-color: black;}
+	64% {background-color: white;}
+	65% {background-color:black;}
+	66% {background-color: white;}
+	67% {background-color: black;}
+	68% {background-color: white;}
+	69% {background-color: black;}
+	70% {background-color:white;}
+	71% {background-color: black;}
+	72% {background-color: white;}
+	73% {background-color: black;}
+	74% {background-color: white;}
+	75% {background-color:black;}
+	76% {background-color: white;}
+	77% {background-color: black;}
+	78% {background-color: white;}
+	79% {background-color: black;}
+	80% {background-color:white;}
+	81% {background-color: black;}
+	82% {background-color: white;}
+	83% {background-color: black;}
+	84% {background-color: white;}
+	85% {background-color:black;}
+	86% {background-color: white;}
+	87% {background-color: black;}
+	88% {background-color: white;}
+	89% {background-color: black;}
+	90% {background-color:white;}
+	91% {background-color: black;}
+	92% {background-color: white;}
+	93% {background-color: black;}
+	94% {background-color: white;}
+	95% {background-color:black;}
+	96% {background-color: white;}
+	97% {background-color: black;}
+	98% {background-color: white;}
+	99% {background-color: black;}
+	100% {background-color:white;}
+
+}
+
+@keyframes piep3 {
+	0% {background-color: white;}
+	1% {background-color: black;}
+	2% {background-color: white;}
+	3% {background-color: black;}
+	4% {background-color: white;}
+	5% {background-color:black;}
+	6% {background-color: white;}
+	7% {background-color: black;}
+	8% {background-color: white;}
+	9% {background-color: black;}
+	10% {background-color:white;}
+	11% {background-color: black;}
+	12% {background-color: white;}
+	13% {background-color: black;}
+	14% {background-color: white;}
+	15% {background-color: black;}
+	16% {background-color: white;}
+	17% {background-color: black;}
+	18% {background-color: white;}
+	19% {background-color: black;}
+	20% {background-color:white;}
+	21% {background-color: black;}
+	22% {background-color: white;}
+	23% {background-color: black;}
+	24% {background-color: white;}
+	25% {background-color: black;}
+	26% {background-color: white;}
+	27% {background-color: black;}
+	28% {background-color: white;}
+	29% {background-color: black;}
+	30% {background-color:white;}
+	31% {background-color: black;}
+	32% {background-color: white;}
+	33% {background-color: black;}
+	34% {background-color: white;}
+	35% {background-color:black;}
+	36% {background-color: white;}
+	37% {background-color: black;}
+	38% {background-color: white;}
+	39% {background-color: black;}
+	40% {background-color:white;}
+	41% {background-color: black;}
+	42% {background-color: white;}
+	43% {background-color: black;}
+	44% {background-color: white;}
+	45% {background-color:black;}
+	46% {background-color: white;}
+	47% {background-color: black;}
+	48% {background-color: white;}
+	49% {background-color: black;}
+	50% {background-color:white;}
+	51% {background-color: black;}
+	52% {background-color: white;}
+	53% {background-color: black;}
+	54% {background-color: white;}
+	55% {background-color:black;}
+	56% {background-color: white;}
+	57% {background-color: black;}
+	58% {background-color: white;}
+	59% {background-color: black;}
+	60% {background-color:white;}
+	61% {background-color: black;}
+	62% {background-color: white;}
+	63% {background-color: black;}
+	64% {background-color: white;}
+	65% {background-color:black;}
+	66% {background-color: white;}
+	67% {background-color: black;}
+	68% {background-color: white;}
+	69% {background-color: black;}
+	70% {background-color:white;}
+	71% {background-color: black;}
+	72% {background-color: white;}
+	73% {background-color: black;}
+	74% {background-color: white;}
+	75% {background-color:black;}
+	76% {background-color: white;}
+	77% {background-color: black;}
+	78% {background-color: white;}
+	79% {background-color: black;}
+	80% {background-color:white;}
+	81% {background-color: black;}
+	82% {background-color: white;}
+	83% {background-color: black;}
+	84% {background-color: white;}
+	85% {background-color:black;}
+	86% {background-color: white;}
+	87% {background-color: black;}
+	88% {background-color: white;}
+	89% {background-color: black;}
+	90% {background-color:white;}
+	91% {background-color: black;}
+	92% {background-color: white;}
+	93% {background-color: black;}
+	94% {background-color: white;}
+	95% {background-color:black;}
+	96% {background-color: white;}
+	97% {background-color: black;}
+	98% {background-color: white;}
+	99% {background-color: black;}
+	100% {background-color:white;}
+
+}
+
+@keyframes piep4 {
+	0% {background-color: white;}
+	1% {background-color: black;}
+	2% {background-color: white;}
+	3% {background-color: black;}
+	4% {background-color: white;}
+	5% {background-color:black;}
+	6% {background-color: white;}
+	7% {background-color: black;}
+	8% {background-color: white;}
+	9% {background-color: black;}
+	10% {background-color:white;}
+	11% {background-color: black;}
+	12% {background-color: white;}
+	13% {background-color: black;}
+	14% {background-color: white;}
+	15% {background-color: black;}
+	16% {background-color: white;}
+	17% {background-color: black;}
+	18% {background-color: white;}
+	19% {background-color: black;}
+	20% {background-color:white;}
+	21% {background-color: black;}
+	22% {background-color: white;}
+	23% {background-color: black;}
+	24% {background-color: white;}
+	25% {background-color: black;}
+	26% {background-color: white;}
+	27% {background-color: black;}
+	28% {background-color: white;}
+	29% {background-color: black;}
+	30% {background-color:white;}
+	31% {background-color: black;}
+	32% {background-color: white;}
+	33% {background-color: black;}
+	34% {background-color: white;}
+	35% {background-color:black;}
+	36% {background-color: white;}
+	37% {background-color: black;}
+	38% {background-color: white;}
+	39% {background-color: black;}
+	40% {background-color:white;}
+	41% {background-color: black;}
+	42% {background-color: white;}
+	43% {background-color: black;}
+	44% {background-color: white;}
+	45% {background-color:black;}
+	46% {background-color: white;}
+	47% {background-color: black;}
+	48% {background-color: white;}
+	49% {background-color: black;}
+	50% {background-color:white;}
+	51% {background-color: black;}
+	52% {background-color: white;}
+	53% {background-color: black;}
+	54% {background-color: white;}
+	55% {background-color:black;}
+	56% {background-color: white;}
+	57% {background-color: black;}
+	58% {background-color: white;}
+	59% {background-color: black;}
+	60% {background-color:white;}
+	61% {background-color: black;}
+	62% {background-color: white;}
+	63% {background-color: black;}
+	64% {background-color: white;}
+	65% {background-color:black;}
+	66% {background-color: white;}
+	67% {background-color: black;}
+	68% {background-color: white;}
+	69% {background-color: black;}
+	70% {background-color:white;}
+	71% {background-color: black;}
+	72% {background-color: white;}
+	73% {background-color: black;}
+	74% {background-color: white;}
+	75% {background-color:black;}
+	76% {background-color: white;}
+	77% {background-color: black;}
+	78% {background-color: white;}
+	79% {background-color: black;}
+	80% {background-color:white;}
+	81% {background-color: black;}
+	82% {background-color: white;}
+	83% {background-color: black;}
+	84% {background-color: white;}
+	85% {background-color:black;}
+	86% {background-color: white;}
+	87% {background-color: black;}
+	88% {background-color: white;}
+	89% {background-color: black;}
+	90% {background-color:white;}
+	91% {background-color: black;}
+	92% {background-color: white;}
+	93% {background-color: black;}
+	94% {background-color: white;}
+	95% {background-color:black;}
+	96% {background-color: white;}
+	97% {background-color: black;}
+	98% {background-color: white;}
+	99% {background-color: black;}
+	100% {background-color:white;}
+	
+
+}
 
 /* **********************************************
 Basic layout.

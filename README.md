@@ -81,3 +81,34 @@ Voor een goede onderbouwing van je keuze voor een ander fragment moet je deze vr
 Je kan dan de nodige HTML en JavaScript genereren door gebruik te maken van [caption generator](https://cmda-minor-vid.github.io/web-typography-18-19/generator/) (in Google Chrome). 
 
 Als je de closed captions wil bewerken dan kan je een tool zoals [Amber Script](https://www.amberscript.com/en) gebruiken. Daar kan je exporteren als `.srt`, en die kan je weer door de generator halen.
+
+
+### Onderbouwing geluid
+Het eerste geluid heb ik ontworpen dat de video trilt, omdat de hoofdpersoon met een auto aan komt rijden en het geluid onheilspellend en spannend is.
+Het tweede geluid is een (vergeleken met andere alarmen) rustig alarm. Deze heb ik ontworpen met een rood en blauwe box shadow.
+Het derde geluid is een loeier. Deze heb ik iets groter en korter, maar dan in het wit gedaan ten opzichte van de vorige. 
+Hierna volgt drie keer een vrij intens alarmgeluid. De derde echter het hardst, deze komt het meest binnen. Ik heb deze heftiger laten knipperen dan de eerste twee. 
+Als laatste hoor je een aanzwellende piep van 41s. Ik vind deze piep heel irritant, ik heb een 'eye pain color palette' opgezocht en deze in 41s steeds sneller laten knipperen tot het irritant wordt in de vorm van een shadow. De achtergrond knippert net zo hard mee met de kleuren zwart en wit. Ik heb een moment van sound toegevoegd zodra de piep is afgelopen en de hoofdpersoon goed nieuws krijgt. Het scherm springt dan opeens op wit.
+
+### Onderbouwing typografie
+Ik heb gekozen voor Brenner, omdat ik het idee had hier veel meer vrijheid en speling had. Ik vond voice1 den vrij monotoon en robotachtige stem hebben. Vandaar de keuze voor mono. Hij komt vijandig over, dus de kleur rood. Hoofdpersoon oogt rustig, dus gekozen voor condensed en de kijker staat aan zijn kant, dus de kleur groen. Ik heb de kleur groen gekoppeld aan een wat grotere font-size, want de kijker staat dichterbij de hoofdpersoon dan de robotachtige stem, kleiner font-size. Pas op het eind bij het goede nieuws is deze robotachtige stem ook groen en zelfde font-size. De fuck-off skinjob heb ik wit ontworpen, het was wel aggressief, maar wel fluisterend. Vandaar de kleur wit, maar wel een gek font.
+
+Ik heb de eerste paragraaf iets aangepast, zelfde font-family en weight.
+De hoofdpersoon moet 3x iets herhalen, dit heb ik ook in de index zo aangepast dat dit te lezen is. Verder heeft de ondertiteling een zwarte achtergrond zodat het leesbaar genoeg is.
+
+### Onderbouwing exclusive principles
+Study situation
+
+Normaal gesproken ontwerp je voor een zo'n breed mogelijke doelgroep. Bij deze opdracht gaat het specifiek om doven/slechthorenden (niet bij geboorte doof). Doordat het specifiek om deze doelgroep gaat, kon ik heel veel loslaten wat betreft ontwerpen en mij volledig focussen op het visuele. De geluiden moeten visueel zo ontworpen worden dat doven dezelfde ervaring hebben als kijkers met een gewoon gehoor.
+
+Ignore conventions
+
+Om consistentie in je designs toe te passen maak je normaal gesproken gebruik van conventies. Conventies zijn er zodat iedere gebruiker je ontwerp herkend door standaardisering. Bij closed captions is dit witte tekst op een zwarte balk. Deze conventies heb ik proberen te doorbreken door verschillende fonts, kleuren, weights en de geluiden visueel te ontwerpen.
+
+Prioritise identity
+
+In plaats van de content op de eerste plaats te zetten, zal ik hier de identiteit van de gebruiker op de eerste plek zetten. Dit is iemand die geluid niet kan oppakken. Het is daarom van belang dat de content, geluid dus minder belangrijk wordt. Om de identiteit van de gebruiker te achterhalen heb ik de video met en zonder geluid bestudeerd en geprobeerd het zo dicht mogelijk bij elkaar te brengen. Een aanzwellend piepgeluid vind ik heel irritant, hier hoort dan ook een beeld bij wat irritant is. Een alarm knippert, een loeigeluid als zwaailicht etc etc.
+
+Add nonsense
+
+Als ontwerper moet normaal gesproken alles van toegevoegde waarde zijn. Aangezien ik specifiek voor slechthorenden ontwerp kan ik dit loslaten. Ik vond het een leuke ervaring buiten richtlijnen om te ontwerpen. Het beeld wat beweegt, kleuren die pijn doen, knipperend licht, contrasten en dergelijke werken voor een normale gebruiker averechts. Voor doven heeft dit echter wel degelijk een toegevoegde waarde. 
